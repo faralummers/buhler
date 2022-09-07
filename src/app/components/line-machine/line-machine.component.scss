@@ -1,0 +1,49 @@
+.line-machine {
+  width: 200px;
+}
+
+.info-logo {
+  display: inline;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.wrapper-icons-running-time {
+  display: flex;
+  justify-content: end;
+  margin-top: 5px;
+}
+
+.wrapper-machine-type {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.machine-type {
+  font-size: 22px;
+}
+
+.container-line-machine {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.big-icon {
+  width: 60px;
+}
+
+.wrapper-big-icon {
+  display: flex;
+  justify-content: center;
+}
+
+.green-line {
+  height: 4px;
+  position: relative;
+  background-color: lightgreen;
+  width: 140px;
+  left: 100%;
+  top: 4rem;
+}

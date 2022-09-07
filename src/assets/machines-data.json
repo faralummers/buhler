@@ -1,0 +1,18 @@
+[
+  {
+    "runningTime": "Running",
+    "machineType": "Scale"
+  },
+  {
+    "runningTime": "Alarm",
+    "machineType": "Attacher"
+  },
+  {
+    "runningTime": "Running",
+    "machineType": "Packer"
+  },
+  {
+    "runningTime": "Warning",
+    "machineType": "Closer"
+  }
+]

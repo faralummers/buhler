@@ -1,0 +1,55 @@
+.topbar{
+  border: 2px black solid;
+  background-color: lightgray;
+}
+
+.topbar-container {
+  display: flex;
+  flex-direction: row;
+  height: 120px;
+  align-items: center;
+  border-bottom: 12px solid #04a79c;
+  padding: 2.5rem;
+}
+
+.buhler-logo {
+  width: 300px;
+}
+
+.wrapper-timeline {
+  margin-left: auto;
+  margin-right: 10rem;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.time-logo {
+  display: inline;
+  width: 35px;
+  margin-right: 10px;
+}
+
+.info-logo {
+  display: inline;
+  width: 30px;
+  margin-right: 10px;
+}
+
+.wrapper-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.navbar-container {
+  height: 90px;
+}
+
+.container-machines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 65vh;
+}
+

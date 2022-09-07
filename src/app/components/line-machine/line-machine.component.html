@@ -1,0 +1,22 @@
+<div class="container-line-machine">
+<div class="line-machine" [ngStyle]="{
+        backgroundColor: lineMachine.runningTime === 'Alarm' ? 'red' :
+                         lineMachine.runningTime ===  'Warning' ? 'orange' :
+                         lineMachine.runningTime === 'Running' ? 'lightgray' : null,
+        color: lineMachine.runningTime !== 'Running' ? 'white' : null,
+        height: hasIcon ? 'auto' : '90px',
+        margin: hasIcon ? '70px' : null
+        }"
+     *ngFor="let lineMachine of machinesData; let last = last;">
+  <div *ngIf="hasIcon && !last" class="green-line"></div>
+  <div class="wrapper-icons-running-time">
+    <img class="info-logo" src="assets/images/{{lineMachine.runningTime}}.svg" alt="">
+  </div>
+  <div *ngIf="hasIcon" class="wrapper-big-icon">
+    <img class="big-icon" src="assets/images/{{lineMachine.machineType}}.svg" alt="">
+  </div>
+  <div [style.padding]="hasIcon ? '10px 0' : ''"  class="wrapper-machine-type">
+    <div class="machine-type">{{lineMachine.machineType}}</div>
+  </div>
+</div>
+</div>

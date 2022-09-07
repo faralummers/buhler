@@ -1,0 +1,25 @@
+<header class="topbar">
+  <div class="topbar-container">
+    <div class="wrapper-buhler-logo">
+      <img class="buhler-logo" src="assets/images/Logo_Bühler_AG.svg.png" alt="">
+    </div>
+    <div class="wrapper-timeline">
+      <img class="time-logo" src="assets/images/baseline_access_time_black_24dp.png" alt="">
+      <div class="timeline">{{date | date: 'dd.MM.yyyy hh:mm '}}</div>
+    </div>
+    <div class="wrapper-info">
+      <img class="info-logo" src="assets/images/baseline_person_black_24dp.png" alt="">
+      <div class="info">Operator</div>
+    </div>
+  </div>
+  <div class="navbar-container">
+      <div class="container-line-machine">
+        <app-line-machine [hasIcon]="false" [machinesData]="machinesData | async"></app-line-machine>
+      </div>
+  </div>
+</header>
+<div class="container-machines">
+  <app-line-machine [hasIcon]="true" [machinesData]="machinesData | async"></app-line-machine>
+</div>
+
+
